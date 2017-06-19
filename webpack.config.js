@@ -4,7 +4,8 @@ const config = {
     entry:'./src/index.js',
     output:{
         path:path.resolve(__dirname,'build'),
-        filename:'bundle.js'
+        filename:'bundle.js',
+        publicPath:'build/'
     },module:{
         rules:[
             {
@@ -17,6 +18,7 @@ const config = {
                 }),
                 test:/\.css$/
             },
+            /* not working
             {
                 test:/\.(jpe?g|png|gif|svg)$/,
                 use:[
@@ -26,7 +28,7 @@ const config = {
                     },
                     'image-webpack-loader'
                 ]
-            }
+            }*/
         ]
     },
     plugins:[

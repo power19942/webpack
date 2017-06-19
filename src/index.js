@@ -1,5 +1,9 @@
-import sum from './sum';
-import './img_view';
+const button = document.createElement('button');
+button.innerText = 'Click';
+button.onclick = () =>{
+    System.import('./img_view').then((m)=>{
+        m.default();
+    });
+};
 
-const total = sum(5,6);
-console.log(total);
+document.body.appendChild(button);
