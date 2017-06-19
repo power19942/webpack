@@ -1,3 +1,5 @@
+import big from '../asseets/big.jpg';
+import small from '../asseets/small.jpg';
 import '../styles/img_view.css';
 
 const img = document.createElement('img');
